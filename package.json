@@ -1,0 +1,23 @@
+{
+  "name": "simpl",
+  "version": "0.1.0",
+  "description": "Simpl is a highly customizable, lightweight css framework, following best practices for visual hierarchy and vertical rhythm.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path sass sass/main.scss css/main.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tbgse/simpl.git"
+  },
+  "author": "Tobias Guse",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/tbgse/simpl/issues"
+  },
+  "homepage": "https://github.com/tbgse/simpl#readme",
+  "devDependencies": {
+    "node-sass": "^4.5.2"
+  }
+}
