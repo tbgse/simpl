@@ -1,0 +1,36 @@
+h1 {
+  font-size:14px;
+  margin:0;
+  line-height:24px;
+}
+h2 {
+  font-size:$base-font-size * 4.854;
+  line-height:$base-font-size * 2;
+}
+h3 {
+  font-size:$base-font-size * 2;
+  line-height:$base-font-rhythm;
+  margin-top:0;
+  margin-bottom:$base-font-margin ;
+  padding:0;
+}
+h4 {
+  font-size:$base-font-size * 1.618;
+  line-height:$base-font-size * 2.2;
+}
+p ~ h3 {
+  margin-top:$base-font-rhythm * 2 -$base-font-margin;
+}
+
+p {
+  font-size:$base-font-size;
+  margin:0;
+  margin-bottom:$base-font-rhythm;
+  line-height:$base-font-rhythm;
+}
+.text-l {
+  font-size:$base-font-size * 1.618;
+}
+.text-s {
+  font-size:$base-font-size * 0.618;
+}
