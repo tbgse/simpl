@@ -1,7 +1,7 @@
 /* Typography */
 body {
   margin: 0;
-  font: 100% Merriweather Sans, Helvetica, sans-serif;
+  font: 100% Merriweather, Helvetica, sans-serif;
   color: #333;
   padding-top: 20px;
   background-position: 0 20px;
@@ -13,26 +13,30 @@ body {
   margin-right: auto; }
 
 h1 {
-  font-size: 14px;
+  font-size: 64px;
   margin: 0;
-  line-height: 24px; }
+  line-height: 56px;
+  margin-bottom: 8px; }
 
 h2 {
-  font-size: 77.664px;
-  line-height: 32px; }
-
-h3 {
   font-size: 32px;
   line-height: 28px;
   margin-top: 0;
   margin-bottom: 8px;
   padding: 0; }
 
+h3 {
+  font-size: 18px;
+  line-height: 28px;
+  margin-top: 0;
+  margin-bottom: 0;
+  padding: 0; }
+
 h4 {
   font-size: 25.888px;
   line-height: 35.2px; }
 
-p ~ h3 {
+p ~ h2 {
   margin-top: 48px; }
 
 p {
