@@ -1,41 +1,77 @@
+h1,h2,h3,h4 {
+  color:$text-heading-color;
+  font-weight:400;
+}
+.text-inverted h1,.text-inverted h2,.text-inverted h3, .text-inverted h4 {
+  color:$text-inverted-color;
+}
+.text-content + h1,
+.text-content + h2,
+.text-content + h3,
+.text-content + .heading-title,
+.row + *,
+.text-content + h4 {
+  margin-top:$base-font-rhythm;
+}
 h1 {
-  font-size:$base-font-size * 4;
+  font-size:$base-font-size * 3;
   margin:0;
-  line-height:$base-font-rhythm * 2;
-  margin-bottom:$base-font-margin;
+  line-height:$base-font-rhythm * 3;
 }
 
 h2 {
-  font-size:$base-font-size * 2;
-  line-height:$base-font-rhythm;
+  font-size:$base-font-size * 2.125;
+  line-height:$base-font-rhythm * 2;
   margin-top:0;
-  margin-bottom:$base-font-margin ;
+  margin-bottom:0;
   padding:0;
 }
 h3 {
-  font-size:$base-font-size * 1.125;
-  line-height:$base-font-rhythm;
+  font-size:$base-font-size * 1.5;
+  line-height:$base-font-rhythm * 2;
   margin-top:0;
   margin-bottom:0;
   padding:0;
 }
 h4 {
-  font-size:$base-font-size * 1.618;
-  line-height:$base-font-size * 2.2;
+  font-size:$base-font-size * 1.125;
+  line-height:$base-font-rhythm * 2;
+  margin-top:0;
+  margin-bottom:0;
+  padding:0;
 }
-p ~ h2 {
-  margin-top:$base-font-rhythm * 2 -$base-font-margin;
+p:not(.heading-title) > h2 {
+  margin-top:$base-font-rhythm * 2;
 }
-
-p {
+.text-content {
   font-size:$base-font-size;
   margin:0;
-  margin-bottom:$base-font-rhythm;
   line-height:$base-font-rhythm;
+}
+.text-content + .text-content {
+  margin-top:$base-font-rhythm;
+}
+.heading-title {
+  margin:0;
+  letter-spacing:0.1rem;
+  line-height:$base-font-rhythm;
+  font-size:$base-font-size * 0.875;
+}
+.text-inverted {
+  color:$text-inverted-color;
 }
 .text-l {
   font-size:$base-font-size * 1.618;
 }
 .text-s {
-  font-size:$base-font-size * 0.618;
+  font-size:$base-font-size * 0.875;
+}
+.text-uppercase {
+  text-transform:uppercase;
+}
+.text-secondary {
+  color:$text-secondary-color;
+}
+.strong {
+  font-weight:600;
 }

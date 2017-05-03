@@ -1,0 +1,19 @@
+.circle {
+  height:350px;
+  width:350px;
+  border-radius:50%;
+  box-shadow:0 0 15px 0px rgba(0,0,0,0.1);
+}
+.grid {
+  position:absolute;
+  top:0;
+  left:0;
+  background-image: linear-gradient(#ccc 1px, transparent 1px);
+  background-repeat:repeat;
+  background-position:0 26px;
+  background-size: 100% $base-font-rhythm;
+  height:300vh;
+  display:none;
+  pointer-events:none;
+  width:100%;
+}

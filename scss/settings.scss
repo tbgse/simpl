@@ -1,13 +1,23 @@
-$site-background: #fff;
-$font-stack: Merriweather, Helvetica, sans-serif;
-$text-primary-color: #333;
-$text-secondary-color: #666;
-$primary-color: #333;
-$secondary-color: blue;
-$content-width: 720px;
-$button-radius: 3px;
+$site-background: #fcfcfc;
+$font-stack: Merriweather , Helvetica, sans-serif;
+$content-width: 1200px;
 
 /* Typography */
+$global-letter-spacing: 0.01rem;
 $base-font-size: 16px;
-$base-font-margin: $base-font-size / 2;
-$base-font-rhythm: $base-font-size * 1.75;
+$base-font-rhythm: $base-font-size * 1.7;
+
+/* Colors */
+$text-primary-color: #333;
+$text-heading-color: #333;
+$text-inverted-color: #fff;
+$text-secondary-color: #999;
+$primary-color: #6070F7;
+$secondary-color: #F89D79;
+$tint-strength: 20%; /* warning: max value = 50% */
+$success-color: #6DC439;
+$warning-color: #CC3E1E;
+/* Buttons */
+$button-height-width-ratio: 2;
+$button-radius: 30px;
+$button-font-weight: 400;

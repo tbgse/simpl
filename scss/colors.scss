@@ -1,0 +1,17 @@
+.primary-bg {
+  background:$primary-color;
+}
+.primary-bg_tint1 {
+  background:tint($primary-color, $tint-strength);
+}
+.primary-bg_tint2 {
+  background:tint($primary-color, $tint-strength * 2);
+}
+
+.primary-bg-gradient_bright {
+  background:linear-gradient($primary-color, tint($primary-color, $tint-strength));
+}
+
+.primary-bg-gradient_dark {
+  background:linear-gradient($primary-color, shade($primary-color, $tint-strength));
+}

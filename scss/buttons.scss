@@ -1,0 +1,99 @@
+.btn {
+  height: $base-font-rhythm * 2;
+  min-width: $base-font-rhythm * $button-height-width-ratio;
+  padding-left:$base-font-rhythm;
+  padding-right:$base-font-rhythm;
+  font-family: $font-stack;
+  cursor: pointer;
+  border-radius: $button-radius;
+  font-weight:$button-font-weight;
+  box-sizing:border-box;
+  border:none;
+  font-size: $base-font-size;
+}
+.btn.btn-size-s {
+  font-size: $base-font-size * 0.875;
+}
+.btn.btn-size-l {
+  font-size: $base-font-size * 1.25;
+}
+.btn.btn-size-xl {
+  font-size: $base-font-size * 1.5;
+}
+.btn.btn-small {
+  height:$base-font-rhythm * 1.25;
+  min-width:0;
+  padding-left:$base-font-rhythm / 2;
+  font-size: $base-font-size * 0.875;
+  padding-right:$base-font-rhythm / 2;
+}
+/* outlined buttons */
+.btn-outlined {
+  @extend .btn;
+  background:transparent;
+}
+.btn-outlined_inverted {
+  @extend .btn-outlined;
+  background:transparent;
+  border: 2px solid $text-inverted-color;
+  color:$text-inverted-color;
+}
+.btn-outlined_inverted-secondary {
+  @extend .btn-outlined;
+  border: 2px solid tint($primary-color, $tint-strength);
+  color:$text-inverted-color;
+}
+.btn-outlined_primary {
+  @extend .btn-outlined;
+  border: 2px solid $primary-color;
+  color:$primary-color;
+}
+.btn-outlined_secondary {
+  @extend .btn-outlined;
+  border: 2px solid $secondary-color;
+  color:$secondary-color;
+}
+.btn-outlined_success {
+  @extend .btn-outlined;
+  border: 2px solid $success-color;
+  color:$success-color;
+}
+.btn-outlined_warning {
+  @extend .btn-outlined;
+  border: 2px solid $warning-color;
+  color:$warning-color;
+}
+
+/* regular buttons */
+.btn-primary {
+  @extend .btn;
+  background:$primary-color;
+  color:$text-inverted-color;
+}
+.btn-primary:hover {
+  background:shade($primary-color, 10%);
+}
+.btn-success {
+  @extend .btn;
+  background:$success-color;
+  color:$text-inverted-color;
+}
+.btn-success:hover {
+  background:shade($success-color, 10%);
+}
+.btn-warning {
+  @extend .btn;
+  background:$warning-color;
+  color:$text-inverted-color;
+}
+.btn-warning:hover {
+  background:shade($warning-color, 10%);
+}
+.btn-secondary:hover {
+  background:shade($secondary-color, 10%);
+}
+.btn-secondary {
+  @extend .btn;
+  background:$secondary-color;
+  color:$text-inverted-color;
+}
