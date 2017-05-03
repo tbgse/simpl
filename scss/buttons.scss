@@ -10,6 +10,7 @@
   box-sizing:border-box;
   border:none;
   font-size: $base-font-size;
+  line-height:$base-font-rhythm;
 }
 .btn.btn-size-s {
   font-size: $base-font-size * 0.875;
@@ -31,6 +32,7 @@
 .btn-outlined {
   @extend .btn;
   background:transparent;
+  line-height:$base-font-rhythm - 4px;
 }
 .btn-outlined_inverted {
   @extend .btn-outlined;

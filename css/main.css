@@ -173,7 +173,8 @@ h4 + .wrapped-row {
   font-weight: 400;
   box-sizing: border-box;
   border: none;
-  font-size: 16px; }
+  font-size: 16px;
+  line-height: 27.2px; }
 
 .btn.btn-size-s, .btn-size-s.btn-outlined, .btn-size-s.btn-outlined_inverted, .btn-size-s.btn-outlined_inverted-secondary, .btn-size-s.btn-outlined_primary, .btn-size-s.btn-outlined_secondary, .btn-size-s.btn-outlined_success, .btn-size-s.btn-outlined_warning, .btn-size-s.btn-primary, .btn-size-s.btn-success, .btn-size-s.btn-warning, .btn-size-s.btn-secondary {
   font-size: 14px; }
@@ -193,7 +194,8 @@ h4 + .wrapped-row {
 
 /* outlined buttons */
 .btn-outlined, .btn-outlined_inverted, .btn-outlined_inverted-secondary, .btn-outlined_primary, .btn-outlined_secondary, .btn-outlined_success, .btn-outlined_warning {
-  background: transparent; }
+  background: transparent;
+  line-height: 23.2px; }
 
 .btn-outlined_inverted {
   background: transparent;
