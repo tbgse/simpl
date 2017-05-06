@@ -11,7 +11,17 @@ body {
 }
 
 .container {
+  width:$content-width;
   max-width:$content-width;
   margin-left:auto;
+  display:flex;
+  flex-flow:column;
   margin-right:auto;
+}
+.horizontal-divider  {
+  background:#ccc;
+  margin-top: $base-font-rhythm;
+  margin-bottom: $base-font-rhythm;
+  height:1px;
+  width:100%;
 }
