@@ -55,6 +55,16 @@
   border: 2px solid $secondary-color;
   color:$secondary-color;
 }
+.btn-outlined_text-primary {
+  @extend .btn-outlined;
+  border: 2px solid $text-primary-color;
+  color:$text-primary-color;
+}
+.btn-outlined_text-secondary {
+  @extend .btn-outlined;
+  border: 2px solid $text-secondary-color;
+  color:$text-secondary-color;
+}
 .btn-outlined_success {
   @extend .btn-outlined;
   border: 2px solid $success-color;

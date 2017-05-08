@@ -41,6 +41,9 @@ body {
   height: 1px;
   width: 100%; }
 
+.img-round {
+  border-radius: 50%; }
+
 h1, h2, h3, h4 {
   color: #333;
   font-weight: 400; }
@@ -52,7 +55,7 @@ h1, h2, h3, h4 {
 .text-content + h2,
 .text-content + h3,
 .text-content + .heading-title,
-.row + *, .wrapped-row + *,
+.row + h4, .wrapped-row + h4,
 .text-content + h4 {
   margin-top: 27.2px; }
 
@@ -108,6 +111,9 @@ p:not(.heading-title) > h2 {
 .text-s {
   font-size: 14px; }
 
+.text-primary {
+  color: #3a4ca6; }
+
 .text-uppercase {
   text-transform: uppercase; }
 
@@ -138,8 +144,20 @@ p:not(.heading-title) > h2 {
 .column.align-items-left {
   align-items: flex-start; }
 
+.column.align-items-center {
+  align-items: center; }
+
 .row.vertical-center, .vertical-center.wrapped-row {
   align-items: center; }
+
+.row.align-items-center, .align-items-center.wrapped-row {
+  justify-content: center; }
+
+.row.space-around, .space-around.wrapped-row {
+  justify-content: space-around; }
+
+.row.space-between, .space-between.wrapped-row {
+  justify-content: space-between; }
 
 .full-width-section.secondary-section {
   background: #f2f2f2; }
@@ -167,7 +185,6 @@ p:not(.heading-title) > h2 {
   flex-flow: column;
   padding-left: 27.2px;
   padding-right: 27.2px;
-  box-sizing: border-box;
   min-width: 5px; }
 
 .column:first-child {
@@ -201,7 +218,13 @@ h4 + .wrapped-row {
 .row.vertical-center, .vertical-center.wrapped-row {
   align-items: center; }
 
-.btn, .btn-outlined, .btn-outlined_inverted, .btn-outlined_inverted-secondary, .btn-outlined_primary, .btn-outlined_secondary, .btn-outlined_success, .btn-outlined_warning, .btn-primary, .btn-success, .btn-warning, .btn-secondary {
+.width-50 {
+  width: 50%; }
+
+.width-33 {
+  width: 33.33%; }
+
+.btn, .btn-outlined, .btn-outlined_inverted, .btn-outlined_inverted-secondary, .btn-outlined_primary, .btn-outlined_secondary, .btn-outlined_text-primary, .btn-outlined_text-secondary, .btn-outlined_success, .btn-outlined_warning, .btn-primary, .btn-success, .btn-warning, .btn-secondary {
   height: 54.4px;
   min-width: 54.4px;
   padding-left: 27.2px;
@@ -215,16 +238,16 @@ h4 + .wrapped-row {
   font-size: 16px;
   line-height: 27.2px; }
 
-.btn.btn-size-s, .btn-size-s.btn-outlined, .btn-size-s.btn-outlined_inverted, .btn-size-s.btn-outlined_inverted-secondary, .btn-size-s.btn-outlined_primary, .btn-size-s.btn-outlined_secondary, .btn-size-s.btn-outlined_success, .btn-size-s.btn-outlined_warning, .btn-size-s.btn-primary, .btn-size-s.btn-success, .btn-size-s.btn-warning, .btn-size-s.btn-secondary {
+.btn.btn-size-s, .btn-size-s.btn-outlined, .btn-size-s.btn-outlined_inverted, .btn-size-s.btn-outlined_inverted-secondary, .btn-size-s.btn-outlined_primary, .btn-size-s.btn-outlined_secondary, .btn-size-s.btn-outlined_text-primary, .btn-size-s.btn-outlined_text-secondary, .btn-size-s.btn-outlined_success, .btn-size-s.btn-outlined_warning, .btn-size-s.btn-primary, .btn-size-s.btn-success, .btn-size-s.btn-warning, .btn-size-s.btn-secondary {
   font-size: 14px; }
 
-.btn.btn-size-l, .btn-size-l.btn-outlined, .btn-size-l.btn-outlined_inverted, .btn-size-l.btn-outlined_inverted-secondary, .btn-size-l.btn-outlined_primary, .btn-size-l.btn-outlined_secondary, .btn-size-l.btn-outlined_success, .btn-size-l.btn-outlined_warning, .btn-size-l.btn-primary, .btn-size-l.btn-success, .btn-size-l.btn-warning, .btn-size-l.btn-secondary {
+.btn.btn-size-l, .btn-size-l.btn-outlined, .btn-size-l.btn-outlined_inverted, .btn-size-l.btn-outlined_inverted-secondary, .btn-size-l.btn-outlined_primary, .btn-size-l.btn-outlined_secondary, .btn-size-l.btn-outlined_text-primary, .btn-size-l.btn-outlined_text-secondary, .btn-size-l.btn-outlined_success, .btn-size-l.btn-outlined_warning, .btn-size-l.btn-primary, .btn-size-l.btn-success, .btn-size-l.btn-warning, .btn-size-l.btn-secondary {
   font-size: 20px; }
 
-.btn.btn-size-xl, .btn-size-xl.btn-outlined, .btn-size-xl.btn-outlined_inverted, .btn-size-xl.btn-outlined_inverted-secondary, .btn-size-xl.btn-outlined_primary, .btn-size-xl.btn-outlined_secondary, .btn-size-xl.btn-outlined_success, .btn-size-xl.btn-outlined_warning, .btn-size-xl.btn-primary, .btn-size-xl.btn-success, .btn-size-xl.btn-warning, .btn-size-xl.btn-secondary {
+.btn.btn-size-xl, .btn-size-xl.btn-outlined, .btn-size-xl.btn-outlined_inverted, .btn-size-xl.btn-outlined_inverted-secondary, .btn-size-xl.btn-outlined_primary, .btn-size-xl.btn-outlined_secondary, .btn-size-xl.btn-outlined_text-primary, .btn-size-xl.btn-outlined_text-secondary, .btn-size-xl.btn-outlined_success, .btn-size-xl.btn-outlined_warning, .btn-size-xl.btn-primary, .btn-size-xl.btn-success, .btn-size-xl.btn-warning, .btn-size-xl.btn-secondary {
   font-size: 24px; }
 
-.btn.btn-small, .btn-small.btn-outlined, .btn-small.btn-outlined_inverted, .btn-small.btn-outlined_inverted-secondary, .btn-small.btn-outlined_primary, .btn-small.btn-outlined_secondary, .btn-small.btn-outlined_success, .btn-small.btn-outlined_warning, .btn-small.btn-primary, .btn-small.btn-success, .btn-small.btn-warning, .btn-small.btn-secondary {
+.btn.btn-small, .btn-small.btn-outlined, .btn-small.btn-outlined_inverted, .btn-small.btn-outlined_inverted-secondary, .btn-small.btn-outlined_primary, .btn-small.btn-outlined_secondary, .btn-small.btn-outlined_text-primary, .btn-small.btn-outlined_text-secondary, .btn-small.btn-outlined_success, .btn-small.btn-outlined_warning, .btn-small.btn-primary, .btn-small.btn-success, .btn-small.btn-warning, .btn-small.btn-secondary {
   height: 34px;
   min-width: 0;
   padding-left: 13.6px;
@@ -232,7 +255,7 @@ h4 + .wrapped-row {
   padding-right: 13.6px; }
 
 /* outlined buttons */
-.btn-outlined, .btn-outlined_inverted, .btn-outlined_inverted-secondary, .btn-outlined_primary, .btn-outlined_secondary, .btn-outlined_success, .btn-outlined_warning {
+.btn-outlined, .btn-outlined_inverted, .btn-outlined_inverted-secondary, .btn-outlined_primary, .btn-outlined_secondary, .btn-outlined_text-primary, .btn-outlined_text-secondary, .btn-outlined_success, .btn-outlined_warning {
   background: transparent;
   line-height: 23.2px; }
 
@@ -252,6 +275,14 @@ h4 + .wrapped-row {
 .btn-outlined_secondary {
   border: 2px solid #11a699;
   color: #11a699; }
+
+.btn-outlined_text-primary {
+  border: 2px solid #333;
+  color: #333; }
+
+.btn-outlined_text-secondary {
+  border: 2px solid #999;
+  color: #999; }
 
 .btn-outlined_success {
   border: 2px solid #6cbf43;
